@@ -34,12 +34,13 @@ export default function Home() {
   };
 
   const handleGetStarted = () => {
-    alert('Redirecting to signup...');
+
     redirect("/signin")
   };
 
   const handleContact = () => {
-    alert('Opening contact form...');
+
+    redirect("/contact")
   };
 
   const isDark = resolvedTheme === 'dark';
@@ -79,7 +80,7 @@ export default function Home() {
                   </svg>
                 )}
               </button>
-              <button onClick={handleContact} className={`hidden sm:inline-block px-8 py-3 rounded-lg font-semibold border transition-all ${isDark ? 'bg-transparent text-gray-300 border-[#404050] hover:bg-[#1a1a24] hover:border-[#505060]' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}>
+              <button onClick={handleGetStarted} className={`hidden sm:inline-block px-8 py-3 rounded-lg font-semibold border transition-all ${isDark ? 'bg-transparent text-gray-300 border-[#404050] hover:bg-[#1a1a24] hover:border-[#505060]' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}>
                 Sign In
               </button>
             </div>

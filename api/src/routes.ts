@@ -48,7 +48,7 @@ r.get("/confirm", async (c) => {
         const decoded: any = jwt.verify(token, String(process.env.JWT_SECRET));
         const user = await User.findById(decoded.id);
         if (!user) return c.json({ error: "User not found" }, 404);
-        const frontendUrl = "http://172.20.10.4:3000/confirmed";
+        const frontendUrl = "https://expense.haki.top/confirmed";
         return c.redirect(`${frontendUrl}?token=${token}`);
     } catch (err) {
         return c.json({ error: "Invalid or expired token" }, 401);

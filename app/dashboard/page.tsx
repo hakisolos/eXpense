@@ -10,7 +10,7 @@ export default function Dashboard() {
     const [allExpenses, setAllExpenses] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
-    const BACKEND_URL = 'https://backend.expense.haki.top/';
+    const BACKEND_URL = 'https://backend.expense.haki.top';
 
     // Calculate analytics from expenses
     const calculateAnalytics = (expenses: any[]) => {

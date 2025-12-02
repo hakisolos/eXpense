@@ -60,7 +60,7 @@ export default function SignInPage() {
             // 🔧 BACKEND URL CONFIGURATION
             // Update this to your backend URL
             // ============================================
-            const BACKEND_URL = 'https://backend.expense.haki.top/';
+            const BACKEND_URL = 'https://backend.expense.haki.top';
             const apiUrl = `${BACKEND_URL}/api/signin`;
 
             console.log('Making request to:', apiUrl);

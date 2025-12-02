@@ -19,7 +19,7 @@ export default function Expenses() {
     const [addingExpense, setAddingExpense] = useState(false);
     const [expenseError, setExpenseError] = useState('');
 
-    const BACKEND_URL = 'http://193.122.5.91:4000';
+    const BACKEND_URL = 'https://backend.expense.haki.top/';
     const categories = ['Misc', 'food', 'utilities', 'personal', 'subscriptions'];
 
     useEffect(() => {

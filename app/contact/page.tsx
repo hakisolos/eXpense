@@ -11,7 +11,7 @@ export default function Contact() {
     const [contactError, setContactError] = useState('');
     const [contactSuccess, setContactSuccess] = useState(false);
 
-    const BACKEND_URL = 'http://193.122.5.91:4000';
+    const BACKEND_URL = 'https://backend.expense.haki.top/';
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

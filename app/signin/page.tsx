@@ -60,7 +60,7 @@ export default function SignInPage() {
             // 🔧 BACKEND URL CONFIGURATION
             // Update this to your backend URL
             // ============================================
-            const BACKEND_URL = 'http://172.20.10.4:4000';
+            const BACKEND_URL = 'http://193.122.5.91:4000';
             const apiUrl = `${BACKEND_URL}/api/signin`;
 
             console.log('Making request to:', apiUrl);

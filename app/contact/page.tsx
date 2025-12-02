@@ -11,7 +11,7 @@ export default function Contact() {
     const [contactError, setContactError] = useState('');
     const [contactSuccess, setContactSuccess] = useState(false);
 
-    const BACKEND_URL = 'http://172.20.10.4:4000';
+    const BACKEND_URL = 'http://193.122.5.91:4000';
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

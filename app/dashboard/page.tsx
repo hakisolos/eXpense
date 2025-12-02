@@ -10,7 +10,7 @@ export default function Dashboard() {
     const [allExpenses, setAllExpenses] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
-    const BACKEND_URL = 'http://172.20.10.4:4000';
+    const BACKEND_URL = 'http://193.122.5.91:4000';
 
     // Calculate analytics from expenses
     const calculateAnalytics = (expenses: any[]) => {

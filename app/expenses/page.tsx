@@ -19,7 +19,7 @@ export default function Expenses() {
     const [addingExpense, setAddingExpense] = useState(false);
     const [expenseError, setExpenseError] = useState('');
 
-    const BACKEND_URL = "http://localhost:3002";
+    const BACKEND_URL = "https://expense-backend-2bkm.onrender.com";
     const categories = ['Misc', 'food', 'utilities', 'personal', 'subscriptions'];
 
     useEffect(() => {

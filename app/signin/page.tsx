@@ -60,7 +60,7 @@ export default function SignInPage() {
             // 🔧 BACKEND URL CONFIGURATION
             // Update this to your backend URL
             // ============================================
-            const BACKEND_URL = "http://localhost:3002";
+            const BACKEND_URL = "https://expense-backend-2bkm.onrender.com";
             const apiUrl = `${BACKEND_URL}/api/signin`;
 
             console.log('Making request to:', apiUrl);

@@ -11,7 +11,7 @@ export default function Contact() {
     const [contactError, setContactError] = useState('');
     const [contactSuccess, setContactSuccess] = useState(false);
 
-    const BACKEND_URL = "http://localhost:3002";
+    const BACKEND_URL = "https://expense-backend-2bkm.onrender.com";
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

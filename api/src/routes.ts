@@ -1,12 +1,12 @@
 import { Hono } from "hono";
 import { User } from "./models/userModel";
 import jwt from "jsonwebtoken"
-import ai from "./ai/ai";
+
 import { sendConfirmationMail, sendReportMail } from "./utils";
 import { Expense } from "./models/expenseModel";
 const r = new Hono()
 
-r.route("/ai", ai)
+
 r.post("/signin", async (c) => {
     const { email } = await c.req.json();
     if (!email) return c.json({ message: "invalid request" }, 401);

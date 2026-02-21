@@ -18,13 +18,13 @@ async function start() {
     try {
         await connb();           // connect to your DB
         console.log("DB connected");
-
+        const PORT =  Number(process.env.PORT) || 3002
         serve({
             fetch: app.fetch,
-            port: Number(process.env.PORT),
+            port: PORT
         });
 
-        console.log("server running on port " + process.env.PORT);
+        console.log("server running on port " + PORT );
     } catch (err) {
         console.error("Failed to start:", err);
     }

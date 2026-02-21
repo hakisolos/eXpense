@@ -1,0 +1,7 @@
+POST http://193.122.5.91:4080/createmongo
+Content-Type: application/json
+
+{
+    "userId": "haki",
+    "dbname": "expense"
+}
